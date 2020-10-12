@@ -70,10 +70,13 @@
 
 .top__section .center__area h3 {
     padding-bottom: 8px;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-weight: 500;
 }
 
 .top__section .center__area p {
-    font-size: 20px;
+    font-size: 18px;
     color: #82015B;
 }
 
