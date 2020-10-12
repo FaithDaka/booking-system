@@ -1,0 +1,42 @@
+html {
+	font-size: 62.5%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-size-adjust: 100%;
+	overflow-x:hidden !important;
+}
+
+body {
+	font: normal 300 1.4rem/1.86 "Poppins", sans-serif;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+	color: #666;
+	background-color: #fff;
+	position:relative !important;
+	overflow-x:hidden !important;
+}
+
+.hero{
+
+    .img-container img{
+        width:100%;
+    }
+    .img-content h2{
+        // color:white;
+    }
+    
+    .img-content .head1{
+        // transform: translateY(-210px);
+        // text-transform: uppercase;
+        // font-size:13px;
+        // margin-left:1%;
+        // font-weight:100;
+    }
+    .img-content .head2{
+        // transform: translateY(-233px);
+        // text-transform: uppercase;
+        // font-size:13px;
+        // margin-left:1%;
+        // font-weight:200;
+    }
+}
