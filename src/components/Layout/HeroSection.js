@@ -6,12 +6,19 @@ const HeroSection = () => {
             <div className="col-12">
                 <div className="hero-banner">
                     <div className="img-container">
-                        <img src="/images/praise.jpg" />
-                        <div className="img-content">
-                            <h2 className="float-left head1">Kansanga</h2>
-                            <h2 className="float-left head2">Miracle Center</h2>
-
+                        <div className="img-content row">
+                            <div className="left">
+                                <h2>
+                                    Don't <br/>miss <br/>any service.
+                                </h2>
+                            </div>
+                            <div className="logo-container">
+                                <img src="/images/logo.png" alt="logo"/>
+                            </div>
                         </div>
+                        <p>
+                        - Never give up until the battle is over -
+                        </p>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.bookingtabs__header h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px 0;
+    margin-top:25px;
+    font-family: 'Montserrat',
+    sans-serif;
+}
+
+@media(max-width:411px) {
+    .bookingtabs__header h3 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+        padding: 20px 0;
+    }
+}
+
+@media(max-width: 320px) {
+    .bookingtabs__header h3 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
