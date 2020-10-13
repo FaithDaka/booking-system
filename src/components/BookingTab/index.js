@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-const BookingTab = () => {
+const BookingTab = ({openModal}) => {
     return (
         <div className="bookingTab">
             <div className="tabs__options">
@@ -18,7 +18,7 @@ const BookingTab = () => {
                     </div>
                 </div>
                 <div className="right__area">
-                    <button className="btn">Book Now</button>
+                    <button className="btn" onClick={openModal}>Book Now</button>
                 </div>
             </div>
         </div>
