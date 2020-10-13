@@ -36,7 +36,7 @@ const UserDetails = ({ close }) => {
                         <input
                         type="text"
                         className="form-control"
-                        name="name"
+                        name="address"
                         value={address}
                         onChange={(e)=>setAddress(e.target.value)}
                         placeholder="  e.g kiwempe, kansanga"
@@ -47,7 +47,7 @@ const UserDetails = ({ close }) => {
                         <input
                         type="text"
                         className="form-control"
-                        name="name"
+                        name="contact"
                         value={contact}
                         onChange={(e)=>setContact(e.target.value)}
                         placeholder="  e.g 0703-XXX-XXX"  

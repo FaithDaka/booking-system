@@ -7,7 +7,10 @@ import './styles.css';
 const BookingTabs = () => {
     const [show, setShow] = useState(false);
 
-    const openModal = () => setShow(true);
+    const openModal = () => {
+        setShow(true);
+        console.log("open modal")
+    }
     const closeModal = () => setShow(false);
 
     return (

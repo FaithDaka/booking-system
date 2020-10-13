@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-const BookingTab = ({openModal}) => {
+const BookingTab = ({ openModal }) => {
     return (
         <div className="bookingTab">
             <div className="tabs__options">
@@ -25,4 +25,4 @@ const BookingTab = ({openModal}) => {
     )
 }
 
-export default BookingTab
+export default BookingTab;

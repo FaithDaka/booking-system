@@ -9,15 +9,15 @@
     background: rgba(0, 0, 0, 0.6);
 }
 
-.display-block {
+.modal .display-block {
     display: block;
   }
   
-  .display-none {
+  .modal .display-none {
     display: none;
   }
 
-  .fade {
+  .modal .fade {
     transition: opacity .15s linear;
 }
 
