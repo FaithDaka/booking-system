@@ -1,17 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import firebase from '../../firebase'
 import LoadSpinner from '../LoadSpinner';
 
 const UserDetails = ({ close }) => {
     const[name, setName]= useState('');
     const[address, setAddress]=useState('');
     const[contact, setContact]=useState('')
-    const[loading, setLoading]=useState(false)
+    const[loading, setLoading]=useState(false);
+    const time = new Date()
 
-    const handleSubmit = async (e) => {
+
+    const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
-        close()
-        setLoading(false)
+        firebase
+            .firestore()
+            .collection('user_details')
+            .add({
+                name,
+                location:address,
+                contact,
+                time_created:time
+            })
+            .then(()=>{
+                setLoading(false)
+                close();
+            })
+        
     }
 
     return (
@@ -54,7 +69,7 @@ const UserDetails = ({ close }) => {
                         required/>
                         </div>
                     </div>
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit" className="btn-lg btn-primary" >
                         {loading ? <LoadSpinner /> : 'Book'}
                     </button>
                     </form>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import BookingTab from '../BookingTab';
-import Modal from '../Modal';
+import Moddal from '../Modal';
 import UserDetails from '../UserDetails';
 import './styles.css';
 
@@ -9,7 +9,6 @@ const BookingTabs = () => {
 
     const openModal = () => {
         setShow(true);
-        console.log("open modal")
     }
     const closeModal = () => setShow(false);
 
@@ -18,9 +17,9 @@ const BookingTabs = () => {
             <div className="bookingtabs__header">
                 <h3>Today's Services</h3>
             </div>
-            <Modal show={show} close={closeModal} title="Fill in the Required Fields">
+            <Moddal show={show} close={closeModal} title="Fill in the Required Fields">
                 <UserDetails close={closeModal} />
-            </Modal>
+            </Moddal>
             <div className="bookingtabs__tabs">
                 <BookingTab openModal={openModal} />
                 <BookingTab openModal={openModal} />
